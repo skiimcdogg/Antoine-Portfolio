@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Roboto Mono;
+}
+
+body {
+    background-color: rgb(234, 236, 232) ;
+}
+
+.navbar {
+    background-color: rgb(211, 212, 211) ;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.switch_box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 100px;
+	min-width: 100px;
+	height: 60px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.box_3{
+	background: rgb(211, 212, 211);
+}
+
+.toggle_switch{
+  width: 100px;
+  height: 45px;
+  position: relative;
+}
+
+input[type="checkbox"].switch_3{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  outline: 0;
+  z-index: 1;
+}
+
+svg.checkbox .outer-ring{
+  stroke-dasharray: 375;
+  stroke-dashoffset: 375;
+  -webkit-animation: resetRing .35s ease-in-out forwards;
+          animation: resetRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .outer-ring{
+  -webkit-animation: animateRing .35s ease-in-out forwards;
+          animation: animateRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_checked{
+  opacity: 1;
+  -webkit-transform: translateX(0) rotate(0deg);
+          transform: translateX(0) rotate(0deg);
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_unchecked{
+  opacity: 0;
+  -webkit-transform: translateX(-200%) rotate(180deg);
+          transform: translateX(-200%) rotate(180deg);
+}
+
+
+svg.checkbox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg.checkbox .is_checked{
+  opacity: 0;
+  fill: yellow;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(200%) rotate(45deg);
+          transform: translateX(200%) rotate(45deg);
+  -webkit-transition: all .35s;
+  transition: all .80s;
+}
+
+svg.checkbox .is_unchecked{
+  opacity: 1;
+  fill: #fff;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(0) rotate(0deg);
+          transform: translateX(0) rotate(0deg);
+  -webkit-transition: all .35s;
+  transition: all .80s;
+}
+
+@-webkit-keyframes animateRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@keyframes animateRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@-webkit-keyframes resetRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #233043;
+  }
+}
+
+@keyframes resetRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #233043;
+  }
+}
+
+#section-1 {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.presentation-title {
+    text-align: center;
+}
+
+.p-presentation {
+    margin: 2%;
+    text-align: center;
+}
+
+.line {
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+    height: 0.15em;
+    background-color: #233043;
+}
+
+.project-title {
+    text-align: center;
+    text-decoration: underline solid rgb(68, 68, 68);
+    margin-bottom: 4%;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.pokedex-img {
+    max-width: 65%; 
+    border-radius: 4.5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+    display: block;
+    transition: box-shadow, 0.3s;
+    transition: transform, 0.3s;
+}
+
+.pokedex-img:hover {
+    transform: scale(1.015); 
+    display: block;
+    height: auto;
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.github-logo {
+    max-width: 4%;
+    opacity: 0.5;
+}
+
+.github-logo:hover {
+    opacity: 1;
+}
+
+.paris-img {
+    max-width: 65%; 
+    border-radius: 4.5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+    display: block;
+    transition: box-shadow, 0.3s;
+    transition: transform, 0.3s;
+}
+
+.paris-img:hover {
+    transform: scale(1.015);
+    display: block;
+    height: auto;
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.git-comp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.section-3 {
+    margin-bottom: 5%;
+}
+
+.section-3 h3 {
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
+
+.section-3 h2 {
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
+
+.carte-visite img {
+    max-width: 4%;
+    margin-right: 2%;
+    opacity: 0.75;
+}
+
+.carte-visite img:hover {
+    opacity: 1;
+}
+
+.copied {
+    display: none;
+}
+
+.display {
+    display: initial;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.blue-mode {
+    background-color: rgb(3, 4, 44);
+    color: white; 
+}
+
+body a {
+    cursor: auto;
+}
+
+body img {
+    cursor: pointer;
+}
+
