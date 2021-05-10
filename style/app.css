@@ -11,6 +11,12 @@ body {
     background-color: rgb(234, 236, 232) ;
 }
 
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+
 .navbar {
     background-color: rgb(211, 212, 211) ;
     display: flex;
@@ -176,7 +182,6 @@ svg.checkbox .is_unchecked{
 
 .project-title {
     text-align: center;
-    text-decoration: underline solid rgb(68, 68, 68);
     margin-bottom: 4%;
 }
 
@@ -251,12 +256,10 @@ svg.checkbox .is_unchecked{
 }
 
 .section-3 h3 {
-    text-decoration: underline;
     margin-bottom: 2%;
 }
 
 .section-3 h2 {
-    text-decoration: underline;
     margin-bottom: 2%;
 }
 
