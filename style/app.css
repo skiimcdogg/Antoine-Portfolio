@@ -7,6 +7,17 @@
     font-family: Roboto Mono;
 }
 
+@media (max-width: 650px) {
+    .p-presentation {
+        padding: 8%
+    }
+
+    section {
+        padding:8%
+    }
+
+}
+
 body {
     background-color: rgb(234, 236, 232) ;
 }
@@ -264,7 +275,7 @@ svg.checkbox .is_unchecked{
 }
 
 .carte-visite img {
-    max-width: 4%;
+    width: 4%;
     margin-right: 2%;
     opacity: 0.75;
 }
