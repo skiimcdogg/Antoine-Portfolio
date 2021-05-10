@@ -2,7 +2,9 @@ let inputSwitch = document.querySelector(".switch_3");
 let navBaar = document.querySelector(".navbar")
 let switchBox = document.querySelector(".box_3")
 let allPage = document.querySelector(".body")
-console.log(switchBox);
+let mail = document.querySelector(".mail-img")
+let copied = document.querySelector(".copied")
+console.log(mail);
 
 function addBlackClass(input) {
     input.classList.toggle("dark-mode")
@@ -16,6 +18,10 @@ inputSwitch.addEventListener("click", () => {
         addBlackClass(navBaar)
         addBlackClass(switchBox)
         addBlueClass(allPage)
+})
 
+mail.addEventListener("click", () => {
+    navigator.clipboard.writeText("antoine-78280@hotmail.fr")
+    copied.classList.add("display")
 })
 

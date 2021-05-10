@@ -272,10 +272,13 @@ svg.checkbox .is_unchecked{
 
 .copied {
     display: none;
+    margin-left: 5%;
+    
 }
 
 .display {
     display: initial;
+    animation: copied 1.5s ease-in-out;
 }
 
 .dark-mode {
