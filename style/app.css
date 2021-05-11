@@ -55,6 +55,7 @@ body {
 	align-items: center;
     padding-left: 2%;
     padding-right: 2%;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 .section-2 + p {
@@ -339,6 +340,7 @@ svg.checkbox .is_unchecked{
 .dark-mode {
     background-color: black;
     color: white;
+    box-shadow: 0 4px 2px -2px rgb(55, 58, 209);
 }
 
 .blue-mode {
