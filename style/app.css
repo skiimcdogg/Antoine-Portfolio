@@ -23,6 +23,14 @@
         padding-top: 3%;
     }
 
+    .section-2 + p {
+        text-align: left;
+    }
+
+    .section-3 + p {
+        text-align: left;
+    }
+
 }
 
 body {
@@ -30,9 +38,12 @@ body {
 }
 
 .rainbow-text {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
-    color: transparent;
-    
+    background-image: linear-gradient(
+        84deg
+        , #10f0fe 18%, #6d85ff 35%, #9c60fe 48%, #d650e3 63%, #fe6936 79%);
+        -webkit-text-fill-color: transparent;
+        color: #fff;
+        -webkit-background-clip: text;
   }
 
 .navbar {
@@ -44,6 +55,21 @@ body {
 	align-items: center;
     padding-left: 2%;
     padding-right: 2%;
+}
+
+.section-2 + p {
+    text-align: left;
+    margin-left: 17%;
+}
+
+.section-3 + p {
+    text-align: left;
+    margin-left: 17%;
+}
+
+.bold {
+    font-weight: bolder;
+   
 }
 
 .switch_box{
@@ -208,6 +234,14 @@ svg.checkbox .is_unchecked{
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
+}
+
+.section-2 h4 {
+    margin-bottom: 2%;
+}
+
+.section-3 h4 {
+    margin-bottom: 2%;
 }
 
 .pokedex-img {
