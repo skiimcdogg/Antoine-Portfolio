@@ -247,7 +247,7 @@ svg.checkbox .is_unchecked{
 
 .pokedex-img {
     max-width: 65%; 
-    border-radius: 4.5%;
+    border-radius: 7px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 4%;
@@ -281,7 +281,7 @@ svg.checkbox .is_unchecked{
 
 .paris-img {
     max-width: 65%; 
-    border-radius: 4.5%;
+    border-radius: 7px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 4%;
