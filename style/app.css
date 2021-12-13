@@ -31,6 +31,10 @@
         text-align: left;
     }
 
+    .app-video {
+        max-width: 40%;
+    }
+
 }
 
 body {
