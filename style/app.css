@@ -256,6 +256,15 @@ svg.checkbox .is_unchecked{
     transition: transform, 0.3s;
 }
 
+.app-video {
+    max-width: 65%; 
+    border-radius: 7px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+    display: block;
+}
+
 .pokedex-img:hover {
     transform: scale(1.015); 
     display: block;
