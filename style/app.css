@@ -34,6 +34,10 @@
     .app-video {
         max-width: 40%;
     }
+    
+    .app-video-nest {
+        max-width: 60%;
+    }
 
 }
 
@@ -258,10 +262,20 @@ svg.checkbox .is_unchecked{
     display: block;
     transition: box-shadow, 0.3s;
     transition: transform, 0.3s;
+    cursor: auto;
 }
 
 .app-video {
     width: 20%; 
+    border-radius: 7px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+    display: block;
+}
+
+.app-video-nest {
+    width: 60%; 
     border-radius: 7px;
     margin-right: auto;
     margin-left: auto;
@@ -301,6 +315,7 @@ svg.checkbox .is_unchecked{
     display: block;
     transition: box-shadow, 0.3s;
     transition: transform, 0.3s;
+    cursor: auto;
 }
 
 .paris-img:hover {

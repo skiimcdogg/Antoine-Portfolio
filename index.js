@@ -36,7 +36,7 @@ inputSwitch.addEventListener("click", () => {
 })
 
 mail.addEventListener("click", () => {
-    navigator.clipboard.writeText("antoine-78280@hotmail.fr")
+    navigator.clipboard.writeText("antoine.stouff78500@gmail.com")
     copied.classList.add("display")
 })
 
